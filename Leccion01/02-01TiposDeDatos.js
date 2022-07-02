@@ -64,3 +64,8 @@ console.log(typeof x);
 var y = null;
 console.log(y);
 console.log(typeof y);
+
+//Array se considera object
+var autos = ["Audio", "BMW", "Volvo"];
+console.log(autos);
+console.log(typeof autos);
