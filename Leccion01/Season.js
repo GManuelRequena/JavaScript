@@ -1,18 +1,21 @@
-let month = 10;
+let month = 13;
 let season;
-
-if (month >= 1 && month <= 3) {
-  console.log("It's Summer");
-} else {
-  if (month > 3 && month <= 6) {
-    console.log("It's Fall");
+if (month > 0 && month <= 12) {
+  if (month >= 1 && month <= 3) {
+    console.log("It's Summer");
   } else {
-    if (month > 6 && month <= 9) {
-      console.log("It's Winter");
+    if (month > 3 && month <= 6) {
+      console.log("It's Fall");
     } else {
-      console.log("It's Spring");
+      if (month > 6 && month <= 9) {
+        console.log("It's Winter");
+      } else {
+        console.log("It's Spring");
+      }
     }
   }
+} else {
+  console.log("Incorrect month");
 }
 
 if (month >= 1 && month <= 3) {
@@ -21,6 +24,8 @@ if (month >= 1 && month <= 3) {
   console.log("It's Fall");
 } else if (month > 6 && month <= 9) {
   console.log("It's Winter");
-} else {
+} else if (month > 9 && month <= 12) {
   console.log("It's Spring");
+} else {
+  console.log("Incorrect month");
 }
